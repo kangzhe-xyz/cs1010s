@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "fa5175f656eb9a51",
+    "type": "split",
+    "children": [
+      {
+        "id": "790952529374cd6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d26867c6cd80e7b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Recursion.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b653ee10b27dfdf6",
+    "type": "split",
+    "children": [
+      {
+        "id": "b2d795bed07ac157",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa4bc680be13d8d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5dbb978dd2c42f03",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b86e9b2654d3479",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "24ea14efcc891d10",
+    "type": "split",
+    "children": [
+      {
+        "id": "14a31961ef36a496",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2502ba38f0b6c04c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Recursion.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f4054eac09206ce4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Recursion.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8fe447e118fddd5a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "fd0c834826dc1844",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Recursion.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "d26867c6cd80e7b8",
+  "lastOpenFiles": [
+    "Prime Numbers.md",
+    "Recursion.md",
+    "Recursive Process.md",
+    "Iterative Process.md",
+    "Euler's Constant.md",
+    "Tracing.md",
+    "Linear Recursion.md",
+    "Untitled.md",
+    "Factorial.md"
+  ]
+}

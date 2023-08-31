@@ -1,0 +1,1 @@
+A recursion where the function calls itself once.
