@@ -14,17 +14,17 @@ from runes import *
 
 def fractal(the_rune, n):
     if n == 1:
-        return the_rune
+        return the_rune 
     else:
         qtl_rune = quarter_turn_left(the_rune)
         frac_btm = stack(qtl_rune, qtl_rune)
-        frac_full = stack(qtl_rune,quarter_turn_right(frac_btm))
+        frac_full = stack(the_rune,quarter_turn_right(frac_btm))
         n -= 1
-        return fractal(the_rune, n)
-    return
+        return fractal(frac_full, n)
+    return frac_full
 
 # Test
-show(fractal(heart_bb, 3))
+# show(fractal(heart_bb, 7))
 # show(fractal(make_cross(rcross_bb), 7))
 # Write your additional test cases here
 
@@ -33,12 +33,16 @@ show(fractal(heart_bb, 3))
 # Task 1b #
 ###########
 
-def fractal_iter(params):
-    # Fill in code here
-    return
+def fractal_iter(the_rune, n):
+    qtl_rune = quarter_turn_left(the_rune) # prepare for stacking
+    for i in range (0,n-1):
+        frac_btm = stack(qtl_rune, qtl_rune) # stack two horizontally
+        frac_full = stack(the_rune, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
+        qtl_rune = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
+    return quarter_turn_right(qtl_rune) # un-rotate 
 
 # Test
-# show(fractal_iter(make_cross(rcross_bb), 3))
+show(fractal_iter(heart_bb,5))
 # show(fractal_iter(make_cross(rcross_bb), 7))
 # Write your additional test cases here
 
