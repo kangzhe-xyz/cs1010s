@@ -8,17 +8,23 @@
 
 from runes import *
 
-
 ###########
 # Task 1a #
 ###########
 
-def fractal(params):
-    # Fill in code here
+def fractal(the_rune, n):
+    if n == 1:
+        return the_rune
+    else:
+        qtl_rune = quarter_turn_left(the_rune)
+        frac_btm = stack(qtl_rune, qtl_rune)
+        frac_full = stack(qtl_rune,quarter_turn_right(frac_btm))
+        n -= 1
+        return fractal(the_rune, n)
     return
 
 # Test
-# show(fractal(make_cross(rcross_bb), 3))
+show(fractal(heart_bb, 3))
 # show(fractal(make_cross(rcross_bb), 7))
 # Write your additional test cases here
 
@@ -81,3 +87,7 @@ def steps(params):
 
 # Test
 # show(steps(rcross_bb, sail_bb, corner_bb, nova_bb))
+
+# for vscode. uncomment this later.
+root = graphics.master 
+root.mainloop()
