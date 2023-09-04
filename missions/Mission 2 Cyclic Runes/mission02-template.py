@@ -15,17 +15,12 @@ from runes import *
 def fractal(the_rune, n):
     if n == 1:
         return the_rune
-    else:
-        top = the_rune
-        btm = quarter_turn_right(stack(quarter_turn_left(the_rune),quarter_turn_left(the_rune)))
-        return fractal(btm, n-1)
-
-
-# Test
-show(fractal(heart_bb, 3))
-# show(fractal(make_cross(rcross_bb), 7))
-# Write your additional test cases here
-
+    else: 
+        qtl = quarter_turn_left(the_rune)
+        frac_btm = quarter_turn_right(stack(qtl,qtl))
+        return stack(the_rune, fractal(frac_btm,n-1))
+    
+# show(fractal(heart_bb,4))
 
 ###########
 # Task 1b #
