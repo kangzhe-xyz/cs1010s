@@ -51,3 +51,24 @@ Eventually, this reaches $T(n - (n-1)) = T(1)$.
 So we have 
 $$T(n) = (n-1) c' + T(1).$$
 But we know $T(1) = c$. So we have $T(n) = A' + nB'$ for some constants $A'$ and $B'$.
+# Exercises: Recitation 3
+## Exercise 1
+```python
+def my_sum(n):
+	sum = 0 # O(1)
+	# in total, the entire loop below is O(n). So O(n) * O(1) * O(1) = O(n).
+	for i in range(1, n+1): # O(1): declaration is O(1)
+		sum = sum + i * (i + 1) # O(1)
+	return sum # O(1)
+```
+What is the time complexity of the code above? $\mathcal O(n)$.
+## Exercise 2
+What is the time complexity of reversing a string? $\mathcal O(n)$.
+## Exercise 3: Recursion
+```python
+def find_e(n):
+	if n == 0:
+		return 1
+	else:
+		return 1 / fact(n) + find_e(n-1)
+```

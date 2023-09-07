@@ -40,3 +40,14 @@ Let $S(n)$ denote the space needed for `fact` with respect to the input `n`.
 Then 
 $$S(n) = cn, \quad \text{\(c\) is a constant}.$$
 Space complexity can also be denoted in [[Big-O Notation]].
+# Exercises (Recitation)
+## Exercise 1
+```python
+def my_sum(n):
+	sum = 0 # O(1)
+	# in total, the entire loop below is O(n). So O(n) * O(1) * O(1) = O(n).
+	for i in range(1, n+1): # O(1): declaration is O(1)
+		sum = sum + i * (i + 1) # O(1)
+	return sum # O(1)
+```
+The space complexity of this is $\mathcal O(1)$.

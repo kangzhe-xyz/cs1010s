@@ -1,5 +1,9 @@
 # Recap
 ![[Function#Summary]]
+# Steps to take
+1. Find the pattern you need.
+2. Find the pattern you have.
+3. Match the patterns.
 # Abstraction
 Consider the code that sums the integers from $a$ to $b$.
 ```python
