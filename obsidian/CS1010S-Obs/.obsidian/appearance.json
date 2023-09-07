@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "cssTheme": "Things"
+  "cssTheme": "Things",
+  "monospaceFontFamily": "FantasqueSansM Nerd Font",
+  "theme": "obsidian",
+  "translucency": false
 }
