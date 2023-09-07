@@ -12,14 +12,14 @@ from runes import *
 # Task 1a #
 ###########
 
-def fractal(the_rune, n):
+def fractal(the_rune: any, n: int) -> any:
     if n == 1:
         return the_rune
     else:
         frac_btm = beside(the_rune, the_rune)
         return stack(the_rune, fractal(frac_btm,n-1))
     
-# show(fractal(heart_bb,4))
+# show(fractal(heart_bb,3))
 
 ###########
 # Task 1b #
@@ -27,7 +27,7 @@ def fractal(the_rune, n):
 
 def fractal_iter(the_rune, n):
     qtl_rune = quarter_turn_left(the_rune) # prepare for stacking
-    for i in range (0,n-1):
+    for i in range (0, n-1):
         frac_btm = stack(qtl_rune, qtl_rune) # stack two horizontally
         frac_full = stack(the_rune, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
         qtl_rune = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
@@ -38,32 +38,27 @@ def fractal_iter(the_rune, n):
 # show(fractal_iter(make_cross(rcross_bb), 7))
 # Write your additional test cases here
 
-
 ###########
 # Task 1c #
 ###########
 
-def dual_fractal(the_rune, n):
-    if n == 1:
-        return the_rune
-    if n%2 == 0:
-        frac_btm = beside(the_rune, the_rune)
-        return stack(heart_bb, dual_fractal(frac_btm,n-1))
-    else: 
-        frac_btm = beside(heart_bb, heart_bb)
-        return stack(the_rune, dual_fractal(frac_btm, n-1))
-    # if n == 1:
-    #     return rune_one
-    # else: 
-    #     if n%2 == 0:
-    #         frac_btm = beside(rune_two, rune_two)
-    #         return stack(rune_one, dual_fractal(frac_btm, rune_one, n-1))
-    #     else:
-    #         frac_btm = beside(rune_one, rune_one)
-    #         return stack(rune_two, dual_fractal(frac_btm, rune_two, n-1))
+def besiden(n: int, the_rune: any) -> any:
+    qtl = quarter_turn_left(the_rune)
+    return quarter_turn_right(stackn(n, qtl))
 
+# show(besiden(5, heart_bb))
+def dual_fractal(rune_top: any, rune_beside: any, n: int) -> any:
+    if n == 1:
+        return rune_top
+    else:
+        if n % 2: # if even
+            frac_btm = beside(rune_beside, rune_beside)
+            return stack(rune_top, dual_fractal(rune_beside, frac_btm, n-1))
+        else: # if odd
+            frac_btm = beside(rune_top, rune_top)
+            return stack(rune_beside, dual_fractal(rune_top, frac_btm, n-1))
 # Test
-show(dual_fractal(rcross_bb,4))
+show(dual_fractal(heart_bb,rcross_bb,4))
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 4))
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 7))
 # Write your additional test cases here
