@@ -1,4 +1,4 @@
-A recursive function is a function that calls itself.
+A recursive function is a [[Function]] that calls itself.
 # Example
 Suppose we want to find out which row number we are in.
 ## Strategy 1: [[Iterative Process]]
