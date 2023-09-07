@@ -15,9 +15,8 @@ from runes import *
 def fractal(the_rune, n):
     if n == 1:
         return the_rune
-    else: 
-        qtl = quarter_turn_left(the_rune)
-        frac_btm = quarter_turn_right(stack(qtl,qtl))
+    else:
+        frac_btm = beside(the_rune, the_rune)
         return stack(the_rune, fractal(frac_btm,n-1))
     
 # show(fractal(heart_bb,4))
@@ -44,12 +43,27 @@ def fractal_iter(the_rune, n):
 # Task 1c #
 ###########
 
-def dual_fractal(params):
-    # Fill in code here
-    return
+def dual_fractal(the_rune, n):
+    if n == 1:
+        return the_rune
+    if n%2 == 0:
+        frac_btm = beside(the_rune, the_rune)
+        return stack(heart_bb, dual_fractal(frac_btm,n-1))
+    else: 
+        frac_btm = beside(heart_bb, heart_bb)
+        return stack(the_rune, dual_fractal(frac_btm, n-1))
+    # if n == 1:
+    #     return rune_one
+    # else: 
+    #     if n%2 == 0:
+    #         frac_btm = beside(rune_two, rune_two)
+    #         return stack(rune_one, dual_fractal(frac_btm, rune_one, n-1))
+    #     else:
+    #         frac_btm = beside(rune_one, rune_one)
+    #         return stack(rune_two, dual_fractal(frac_btm, rune_two, n-1))
 
 # Test
-# show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 3))
+show(dual_fractal(rcross_bb,4))
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 4))
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 7))
 # Write your additional test cases here
@@ -61,12 +75,37 @@ def dual_fractal(params):
 # Task 1d #
 ###########
 
-def dual_fractal_iter(params):
-    # Fill in code here
-    return
+def dual_fractal_iter(rune_one, rune_two, n):
+    qtl_one = quarter_turn_left(rune_one) # prepare for stacking
+    qtl_two = quarter_turn_left(rune_two) # prepare for stacking
+    if n % 2 == 0: # check even or odd to determine which one to use for the bottom layer
+        for i in range (0,n-1):
+            if i % 2 != 0: # ping pong between both odd and even
+                frac_btm = stack(qtl_one, qtl_one) # stack two horizontally
+                frac_full = stack(rune_two, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
+                qtl_two = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
+            else:
+                frac_btm = stack(qtl_two, qtl_two) # stack two horizontally
+                frac_full = stack(rune_one, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
+                qtl_one = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
+    else: 
+        for i in range (0,n-1):
+            if i % 2 == 0: # ping pong between both odd and even
+                frac_btm = stack(qtl_one, qtl_one) # stack two horizontally
+                frac_full = stack(rune_two, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
+                qtl_two = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
+            else:
+                frac_btm = stack(qtl_two, qtl_two) # stack two horizontally
+                frac_full = stack(rune_one, quarter_turn_right(frac_btm)) # stack one copy of the rune on top
+                qtl_one = quarter_turn_left(frac_full) # this will become the new thing to stack horizontally
+        
+    if n == 1:
+        return rune_one
+    else:
+        return quarter_turn_right(qtl_one) # will always finish off with qtl_one
 
 # Test
-# show(dual_fractal_iter(make_cross(rcross_bb), make_cross(nova_bb), 3))
+# show(dual_fractal_iter(heart_bb,nova_bb,4))
 # show(dual_fractal_iter(make_cross(rcross_bb), make_cross(nova_bb), 4))
 # show(dual_fractal_iter(make_cross(rcross_bb), make_cross(nova_bb), 7))
 # Write your additional test cases here
@@ -77,10 +116,17 @@ def dual_fractal_iter(params):
 ##########
 # Task 2 #
 ##########
+def mosaic(a,b,c,d):
+    patterns_right = quarter_turn_left(stack(a,b))
+    patterns_left = quarter_turn_left(stack(d,c))
+    return quarter_turn_right(stack(patterns_right, patterns_left))
 
-def steps(params):
-    # Fill in code here
-    return
+def steps(a,b,c,d):
+    a = overlay_frac(3/4,blank_bb,a)
+    b = overlay_frac(1/2,blank_bb,b)
+    c = overlay_frac(1/4,blank_bb,c)
+    d = overlay_frac(0,blank_bb,d)
+    return mosaic(a,b,c,d)
 
 # Test
 # show(steps(rcross_bb, sail_bb, corner_bb, nova_bb))
