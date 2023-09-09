@@ -43,28 +43,26 @@ def fractal_iter(the_rune, n):
 # Task 1c #
 ###########
 
-def dual_fractal(the_rune, n):
-    if n == 1:
-        return the_rune
-    if n%2 == 0:
-        frac_btm = beside(the_rune, the_rune)
-        return stack(heart_bb, dual_fractal(frac_btm,n-1))
-    else: 
-        frac_btm = beside(heart_bb, heart_bb)
-        return stack(the_rune, dual_fractal(frac_btm, n-1))
-    # if n == 1:
-    #     return rune_one
-    # else: 
-    #     if n%2 == 0:
-    #         frac_btm = beside(rune_two, rune_two)
-    #         return stack(rune_one, dual_fractal(frac_btm, rune_one, n-1))
-    #     else:
-    #         frac_btm = beside(rune_one, rune_one)
-    #         return stack(rune_two, dual_fractal(frac_btm, rune_two, n-1))
+def beside_n(n: int, the_rune):
+    """
+    An implementation of `beside()`, but n times.
+    """
+    qtl = quarter_turn_left(the_rune)
+    return quarter_turn_right(stackn(n, qtl))
 
 # Test
-show(dual_fractal(rcross_bb,4))
-# show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 4))
+# show(beside_n(5, heart_bb))
+
+
+def dual_fractal(rune_one, rune_two, n): 
+    if n == 1:
+        return rune_one
+    else:
+        frac_btm = beside(rune_two,rune_two)
+        return(stack(rune_two if n % 2 else rune_one, dual_fractal(rune_one, frac_btm, n-1)))
+
+# Test
+show(dual_fractal(heart_bb, rcross_bb, 6))
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 7))
 # Write your additional test cases here
 
