@@ -42,14 +42,10 @@ def fractal_iter(the_rune, n):
 # Task 1c #
 ###########
 
-<<<<<<< HEAD
-def besiden(n: int, the_rune: any) -> any:
-=======
 def beside_n(n: int, the_rune):
     """
     An implementation of `beside()`, but n times.
     """
->>>>>>> 6776d9c0b7a2696f61482e90935a527c4d36c555
     qtl = quarter_turn_left(the_rune)
     return quarter_turn_right(stackn(n, qtl))
 
@@ -65,23 +61,18 @@ def dual_fractal(rune_top: any, rune_beside: any, n: int) -> any:
             frac_btm = beside(rune_top, rune_top)
             return stack(rune_beside, dual_fractal(rune_top, frac_btm, n-1))
 # Test
-<<<<<<< HEAD
-show(dual_fractal(heart_bb,rcross_bb,4))
-# show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 4))
-=======
 # show(beside_n(5, heart_bb))
 
 
 def dual_fractal(rune_one, rune_two, n): 
     if n == 1:
-        return rune_one
+        return rune_one 
     else:
-        frac_btm = beside(rune_two,rune_two)
-        return(stack(rune_two if n % 2 else rune_one, dual_fractal(rune_one, frac_btm, n-1)))
+        frac_btm = beside(rune_two, rune_two) 
+        return stack(rune_one, dual_fractal(frac_btm, beside(rune_one,rune_one), n-1))
 
 # Test
 show(dual_fractal(heart_bb, rcross_bb, 6))
->>>>>>> 6776d9c0b7a2696f61482e90935a527c4d36c555
 # show(dual_fractal(make_cross(rcross_bb), make_cross(nova_bb), 7))
 # Write your additional test cases here
 
