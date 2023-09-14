@@ -8,30 +8,80 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6f99be5003627bec",
+            "id": "38edac075ae546e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Big-O Notation.md",
+                "file": "Equality.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d07b670cc1a2765a",
+            "id": "d6ec6a8f2d7d03a6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          },
+          {
+            "id": "87cd6786d81d6570",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Space Complexity.md",
+                "file": "Rational Number.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "dcacbf53f979a015",
+        "type": "split",
+        "children": [
+          {
+            "id": "8742b4503c156eba",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5e50802335545fad",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Box-and-Pointer Notation.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "378e0cd1c12666f8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "89823364cc0061ea",
+                "type": "leaf",
+                "state": {
+                  "type": "pdf",
+                  "state": {
+                    "file": "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -41,8 +91,24 @@
     "type": "split",
     "children": [
       {
-        "id": "b2d795bed07ac157",
+        "id": "d8a79a169bee366c",
         "type": "tabs",
+        "dimension": 28.891257995735607,
+        "children": [
+          {
+            "id": "6f99be5003627bec",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "3e1b04ab02b8df1b",
+        "type": "tabs",
+        "dimension": 71.10874200426439,
         "children": [
           {
             "id": "fa4bc680be13d8d4",
@@ -81,7 +147,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 283.5026054382324
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -97,7 +163,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Big-O Notation.md",
+                "file": "Rational Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +180,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Big-O Notation.md",
+                "file": "Rational Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +203,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Big-O Notation.md"
+                "file": "Rational Number.md"
+              }
+            }
+          },
+          {
+            "id": "12ab729e2a0fb329",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
               }
             }
           }
@@ -159,23 +235,39 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "6f99be5003627bec",
+  "active": "87cd6786d81d6570",
   "lastOpenFiles": [
     "Recursion.md",
-    "Space Complexity.md",
+    "Rational Number.md",
     "Recursive Process.md",
-    "Iterative Process.md",
     "Prime Numbers.md",
     "Order of Growth.md",
     "Linear Recursion.md",
-    "Lambda Functions.md",
-    "Time Complexity.md",
-    "Big-O Notation.md",
+    "Predicates.md",
+    "Identity.md",
     "Higher Order Function.md",
-    "Function.md",
-    "Euler's Constant.md",
+    "Functional Abstraction.md",
     "Fibonacci.md",
-    "Factorial.md",
-    "Tracing.md"
+    "Function.md",
+    "Data Abstraction.md",
+    "Constructors.md",
+    "Equality.md",
+    "Equivalence.md",
+    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
+    "Box-and-Pointer Notation.md",
+    "Tuples.md",
+    "String Slicing.md",
+    "Space Complexity.md",
+    "Selector.md",
+    "Euler's Constant.md",
+    "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
+    "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
+    "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
+    "Lecture Slides/CS1010S-Lec-01 Introduction to CS1010S and Python.pdf",
+    "Lecture Slides",
+    "Big-O Notation.md",
+    "Iterative Process.md",
+    "Lambda Functions.md",
+    "Time Complexity.md"
   ]
 }

@@ -1,0 +1,1 @@
+To access individual components of compound data

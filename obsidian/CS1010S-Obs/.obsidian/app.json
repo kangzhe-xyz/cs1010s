@@ -3,5 +3,6 @@
   "showLineNumber": true,
   "useTab": true,
   "smartIndentList": true,
-  "promptDelete": false
+  "promptDelete": false,
+  "alwaysUpdateLinks": true
 }
