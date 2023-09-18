@@ -8,27 +8,19 @@
         "type": "tabs",
         "children": [
           {
-            "id": "38edac075ae546e2",
+            "id": "87cd6786d81d6570",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equality.md",
-                "mode": "source",
+                "file": "Data Abstraction.md",
+                "mode": "preview",
                 "source": false
               }
             }
           },
           {
-            "id": "d6ec6a8f2d7d03a6",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          },
-          {
-            "id": "87cd6786d81d6570",
+            "id": "e1a01663770f22e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -38,50 +30,37 @@
                 "source": false
               }
             }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "dcacbf53f979a015",
-        "type": "split",
-        "children": [
-          {
-            "id": "8742b4503c156eba",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5e50802335545fad",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Box-and-Pointer Notation.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
           },
           {
-            "id": "378e0cd1c12666f8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "89823364cc0061ea",
-                "type": "leaf",
-                "state": {
-                  "type": "pdf",
-                  "state": {
-                    "file": "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf"
-                  }
-                }
+            "id": "55f490447fc69c1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evaluation.md",
+                "mode": "preview",
+                "source": false
               }
-            ]
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 1
+      },
+      {
+        "id": "378e0cd1c12666f8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89823364cc0061ea",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +72,7 @@
       {
         "id": "d8a79a169bee366c",
         "type": "tabs",
-        "dimension": 28.891257995735607,
+        "dimension": 28.89125799573561,
         "children": [
           {
             "id": "6f99be5003627bec",
@@ -235,39 +214,39 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "87cd6786d81d6570",
+  "active": "e1a01663770f22e8",
   "lastOpenFiles": [
-    "Recursion.md",
-    "Rational Number.md",
-    "Recursive Process.md",
     "Prime Numbers.md",
-    "Order of Growth.md",
     "Linear Recursion.md",
-    "Predicates.md",
     "Identity.md",
+    "Equality.md",
+    "Factorial.md",
+    "Equivalence.md",
+    "Box-and-Pointer Notation.md",
+    "Constructors.md",
+    "Big-O Notation.md",
+    "Lambda Functions.md",
+    "Evaluation.md",
+    "Printers.md",
+    "Data Abstraction.md",
+    "Predicates.md",
+    "Rational Number.md",
+    "Recursion.md",
+    "Recursive Process.md",
+    "Order of Growth.md",
     "Higher Order Function.md",
     "Functional Abstraction.md",
     "Fibonacci.md",
     "Function.md",
-    "Data Abstraction.md",
-    "Constructors.md",
-    "Equality.md",
-    "Equivalence.md",
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
-    "Box-and-Pointer Notation.md",
     "Tuples.md",
     "String Slicing.md",
     "Space Complexity.md",
     "Selector.md",
-    "Euler's Constant.md",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
     "Lecture Slides/CS1010S-Lec-01 Introduction to CS1010S and Python.pdf",
-    "Lecture Slides",
-    "Big-O Notation.md",
-    "Iterative Process.md",
-    "Lambda Functions.md",
-    "Time Complexity.md"
+    "Lecture Slides"
   ]
 }

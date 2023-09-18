@@ -1,3 +1,4 @@
+Also called anonymous functions
 # What it is
 A Lambda [[Function]] is of the form
 ```python
