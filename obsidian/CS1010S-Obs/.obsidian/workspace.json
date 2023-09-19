@@ -4,60 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1e8cc603c9058b26",
+        "id": "3864a0257edc2d9a",
         "type": "tabs",
         "children": [
           {
-            "id": "87cd6786d81d6570",
+            "id": "f81c21cd3b38e2be",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Abstraction.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e1a01663770f22e8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rational Number.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "55f490447fc69c1b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Evaluation.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "378e0cd1c12666f8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "89823364cc0061ea",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -142,7 +97,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rational Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rational Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -181,9 +134,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Rational Number.md"
-              }
+              "state": {}
             }
           },
           {
@@ -214,8 +165,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e1a01663770f22e8",
+  "active": "f81c21cd3b38e2be",
   "lastOpenFiles": [
+    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
+    "Evaluation.md",
+    "Data Abstraction.md",
+    "Rational Number.md",
     "Prime Numbers.md",
     "Linear Recursion.md",
     "Identity.md",
@@ -226,11 +181,8 @@
     "Constructors.md",
     "Big-O Notation.md",
     "Lambda Functions.md",
-    "Evaluation.md",
     "Printers.md",
-    "Data Abstraction.md",
     "Predicates.md",
-    "Rational Number.md",
     "Recursion.md",
     "Recursive Process.md",
     "Order of Growth.md",
@@ -238,11 +190,9 @@
     "Functional Abstraction.md",
     "Fibonacci.md",
     "Function.md",
-    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Tuples.md",
     "String Slicing.md",
     "Space Complexity.md",
-    "Selector.md",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
