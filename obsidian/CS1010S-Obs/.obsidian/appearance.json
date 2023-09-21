@@ -1,7 +1,7 @@
 {
   "accentColor": "",
   "cssTheme": "Atom",
-  "monospaceFontFamily": "FantasqueSansM Nerd Font",
+  "monospaceFontFamily": "Fira Code,FantasqueSansM Nerd Font Mono,FantasqueSansM Nerd Font",
   "theme": "obsidian",
   "translucency": false
 }

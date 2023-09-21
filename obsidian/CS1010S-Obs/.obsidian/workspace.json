@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "3864a0257edc2d9a",
+        "id": "eab8933391ca8bf8",
         "type": "tabs",
         "children": [
           {
-            "id": "f81c21cd3b38e2be",
+            "id": "82c09805aaa2428e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Evaluation.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -25,42 +29,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d8a79a169bee366c",
-        "type": "tabs",
-        "dimension": 28.89125799573561,
-        "children": [
-          {
-            "id": "6f99be5003627bec",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          }
-        ]
-      },
-      {
         "id": "3e1b04ab02b8df1b",
         "type": "tabs",
-        "dimension": 71.10874200426439,
+        "dimension": 39.4291754756871,
         "children": [
-          {
-            "id": "fa4bc680be13d8d4",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "5dbb978dd2c42f03",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Example",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,12 +55,38 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "ae12dd86b035e036",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "45fbc72885262b86",
+        "type": "tabs",
+        "dimension": 60.57082452431289,
+        "children": [
+          {
+            "id": "fa4bc680be13d8d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 283.5026054382324
+    "width": 232.5
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -97,6 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Evaluation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,6 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Evaluation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +141,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Evaluation.md"
+              }
             }
           },
           {
@@ -156,8 +165,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
@@ -165,17 +174,28 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f81c21cd3b38e2be",
+  "active": "82c09805aaa2428e",
   "lastOpenFiles": [
-    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
+    "Factorial.md",
     "Evaluation.md",
-    "Data Abstraction.md",
-    "Rational Number.md",
+    "Fibonacci.md",
+    "Files.md",
+    "Tables.md",
     "Prime Numbers.md",
+    "Data Wrangling.md",
+    "HOF Sequences.md",
+    "Sum odd squares.md",
+    "Iterables.md",
+    "Sequences.md",
+    "Data Abstraction.md",
+    "Scaling a Sequence.md",
+    "Reversing.md",
+    "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
+    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
+    "Rational Number.md",
     "Linear Recursion.md",
     "Identity.md",
     "Equality.md",
-    "Factorial.md",
     "Equivalence.md",
     "Box-and-Pointer Notation.md",
     "Constructors.md",
@@ -184,15 +204,6 @@
     "Printers.md",
     "Predicates.md",
     "Recursion.md",
-    "Recursive Process.md",
-    "Order of Growth.md",
-    "Higher Order Function.md",
-    "Functional Abstraction.md",
-    "Fibonacci.md",
-    "Function.md",
-    "Tuples.md",
-    "String Slicing.md",
-    "Space Complexity.md",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
