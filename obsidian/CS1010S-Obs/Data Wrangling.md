@@ -1,0 +1,1 @@
+The process of "cleaning up data" before processing.

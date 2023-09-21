@@ -1,3 +1,4 @@
+In Python, expressions are evaluated from *left-to-right*.
 ```python
 print(print(print(1)), (2), print(3,))
 #          ^ here first                => prints 1
