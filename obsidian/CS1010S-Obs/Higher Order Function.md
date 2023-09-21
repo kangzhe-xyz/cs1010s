@@ -1,3 +1,4 @@
+#HOF
 # Recap
 ![[Function#Summary]]
 # Steps to take

@@ -1,3 +1,4 @@
+#HOF
 Realise the similarity of the [[Reversing#Recursive Method]] and [[Scaling a Sequence#Recursive Process]].
 We can define [[Higher Order Function]] based on identifying patterns.
 # HOF `map`
