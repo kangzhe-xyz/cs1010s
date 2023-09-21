@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Evaluation.md",
+                "file": "Sum odd squares.md",
                 "mode": "preview",
                 "source": false
               }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Example",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,8 +64,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "45fbc72885262b86",
@@ -102,7 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Evaluation.md",
+                "file": "Sum odd squares.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Evaluation.md",
+                "file": "Sum odd squares.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +141,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Evaluation.md"
+                "file": "Sum odd squares.md"
               }
             }
           },
@@ -176,34 +175,34 @@
   },
   "active": "82c09805aaa2428e",
   "lastOpenFiles": [
-    "Factorial.md",
+    "Tables.md",
+    "Tracing.md",
+    "Tuples.md",
+    "Sequences.md",
+    "Scaling a Sequence.md",
+    "Selector.md",
+    "Reversing.md",
+    "Lambda Functions.md",
+    "HOF Sequences.md",
+    "Higher Order Function.md",
+    "Iterables.md",
+    "Order of Growth.md",
+    "Box-and-Pointer Notation.md",
+    "Recursive Process.md",
+    "Functional Abstraction.md",
+    "Big-O Notation.md",
     "Evaluation.md",
+    "Factorial.md",
     "Fibonacci.md",
     "Files.md",
-    "Tables.md",
     "Prime Numbers.md",
     "Data Wrangling.md",
-    "HOF Sequences.md",
     "Sum odd squares.md",
-    "Iterables.md",
-    "Sequences.md",
     "Data Abstraction.md",
-    "Scaling a Sequence.md",
-    "Reversing.md",
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Rational Number.md",
     "Linear Recursion.md",
-    "Identity.md",
-    "Equality.md",
-    "Equivalence.md",
-    "Box-and-Pointer Notation.md",
-    "Constructors.md",
-    "Big-O Notation.md",
-    "Lambda Functions.md",
-    "Printers.md",
-    "Predicates.md",
-    "Recursion.md",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",

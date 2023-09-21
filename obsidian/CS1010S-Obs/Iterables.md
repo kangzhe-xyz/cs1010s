@@ -10,3 +10,16 @@ The functions [[HOF Sequences#HOF `map`]] and [[HOF Sequences#HOF `filter`]] ret
 ```
 
 Iterables are of **one-time use** (unless converted).
+# How to iterate
+You can either iterate though a tuple by element:
+```python
+for i in seq:
+	f(i)
+	...
+```
+or by index:
+```python
+for i in range(0,len(seq)):
+	f(i)
+	...
+```

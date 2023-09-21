@@ -43,6 +43,17 @@ foo # => ((1,2), (3,4))
 ```
 # Tuple Operations
 Similar to ![[String Slicing]] 
+## Concatenation
+```python
+seq = 2 * (2 ,3 ,4)
+x = seq[:2] + (0,) + seq[4:]
+```
+## Copy
+```python
+x = seq[0:]
+```
+## Map, Filter
+See [[HOF Sequences]]
 # Tuple Iterations
 See [[Iterative Process]]
 ```python
