@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Reversing.md",
+                "file": "HOF Sequences.md",
                 "mode": "preview",
                 "source": false
               }
@@ -142,7 +142,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Reversing.md",
+                "file": "HOF Sequences.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +159,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Reversing.md",
+                "file": "HOF Sequences.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +182,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Reversing.md"
+                "file": "HOF Sequences.md"
               }
             }
           },
@@ -216,6 +216,7 @@
   },
   "active": "a6ac9b10aa1ad4b2",
   "lastOpenFiles": [
+    "Reversing.md",
     "Scaling a Sequence.md",
     "Recursive Process.md",
     "Printers.md",
@@ -232,7 +233,6 @@
     "Tuples.md",
     "Sequences.md",
     "Selector.md",
-    "Reversing.md",
     "Lambda Functions.md",
     "Iterables.md",
     "Order of Growth.md",
