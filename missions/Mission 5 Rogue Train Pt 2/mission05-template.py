@@ -43,9 +43,9 @@ def get_station_name(station):
     pass
 
 ### \/ PLEASE UNCOMMENT THIS BEFORE STARTING MISSION 5 \/ ###
-# test_station1 = make_station('CC2', 'Bras Basah')
-# test_station2 = make_station('CC3', 'Esplanade')
-# test_station3 = make_station('CC4', 'Promenade')
+test_station1 = make_station('CC2', 'Bras Basah')
+test_station2 = make_station('CC3', 'Esplanade')
+test_station3 = make_station('CC4', 'Promenade')
 
 
 #############
@@ -83,7 +83,7 @@ def get_station_position(line, station_code):
     pass
 
 ### \/ PLEASE UNCOMMENT THIS BEFORE STARTING MISSION 5 \/ ###
-# test_line = make_line('Circle Line', (test_station1, test_station2, test_station3))
+test_line = make_line('Circle Line', (test_station1, test_station2, test_station3))
 
 #####################
 # TrainPosition ADT #
@@ -109,8 +109,8 @@ def get_next_station(train_position):
     pass
 
 ### \/ PLEASE UNCOMMENT THIS BEFORE STARTING MISSION 5 \/ ###
-# test_train_position1 = make_train_position(False, test_station1, test_station2)
-# test_train_position2 = make_train_position(True, test_station3, test_station2)
+test_train_position1 = make_train_position(False, test_station1, test_station2)
+test_train_position2 = make_train_position(True, test_station3, test_station2)
 
 #####################
 # ScheduleEvent ADT #
@@ -129,8 +129,8 @@ def get_schedule_time(schedule_event):
     pass
 
 ### \/ PLEASE UNCOMMENT THIS BEFORE STARTING MISSION 5 \/ ###
-# test_bd_event1 = make_schedule_event(test_train, test_train_position2, datetime.datetime(2016, 1, 1, 9, 27))
-# test_bd_event2 = make_schedule_event(test_train, test_train_position1, datetime.datetime(2016, 1, 1, 2, 25))
+test_bd_event1 = make_schedule_event(test_train, test_train_position2, datetime.datetime(2016, 1, 1, 9, 27))
+test_bd_event2 = make_schedule_event(test_train, test_train_position1, datetime.datetime(2016, 1, 1, 2, 25))
 
 ################ /\ MISSION 04 CODE HERE /\ ################
 
