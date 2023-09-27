@@ -257,7 +257,7 @@ def get_location_id_in_line(bd_event, line):
 ############
 
 # UNCOMMENT the following to read the entire train schedule
-# FULL_SCHEDULE = parse_events_in_line('train_schedule.csv', CCL)    # this will take some time to run
+FULL_SCHEDULE = parse_events_in_line('train_schedule.csv', CCL)    # this will take some time to run
 
 
 ###########
