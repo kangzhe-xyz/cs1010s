@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOF Sequences.md",
+                "file": "Rational Number.md",
                 "mode": "preview",
                 "source": false
               }
@@ -54,10 +54,8 @@
             "id": "464643a5bef0fe4d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -142,7 +140,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HOF Sequences.md",
+                "file": "Rational Number.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,7 +157,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HOF Sequences.md",
+                "file": "Rational Number.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,7 +180,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HOF Sequences.md"
+                "file": "Rational Number.md"
               }
             }
           },
@@ -216,12 +214,13 @@
   },
   "active": "a6ac9b10aa1ad4b2",
   "lastOpenFiles": [
+    "Big-O Notation.md",
+    "HOF Sequences.md",
     "Reversing.md",
     "Scaling a Sequence.md",
     "Recursive Process.md",
     "Printers.md",
     "Prime Numbers.md",
-    "HOF Sequences.md",
     "HOF Fold.md",
     "HOF Accumulate.md",
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
@@ -238,7 +237,6 @@
     "Order of Growth.md",
     "Box-and-Pointer Notation.md",
     "Functional Abstraction.md",
-    "Big-O Notation.md",
     "Evaluation.md",
     "Factorial.md",
     "Fibonacci.md",
