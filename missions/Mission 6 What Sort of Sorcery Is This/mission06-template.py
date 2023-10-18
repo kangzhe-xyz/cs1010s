@@ -119,12 +119,15 @@ def insert_tree(x, tree):
     - x <= entry -> return new tree with x inserted into left sub tree
     - otherwise -> return new tree with x inserted into right sub tree
     """
-    if tree == []:
-        result = build_tree(x, None, None)
-    # Your code here
-    return result
+    if is_empty_tree(tree):
+        return build_tree(x, make_empty_tree(), make_empty_tree())
+    elif x <= entry(tree):
+        return build_tree(entry(tree), insert_tree(x, left_branch(tree)), right_branch(tree))
+    else:
+        return build_tree(entry(tree), left_branch(tree), insert_tree(x, right_branch(tree)))
 
 t1 = insert_tree(5, t1)
+print("TREE 1")
 print_tree(t1)
 #=> 2           insert_tree(5, t1)        2
 #=>1 3               ===>               1   3
@@ -148,9 +151,14 @@ print_tree(t2)
 ###########
 
 def contains(x, tree):
-    """ Returns true if x is in binary tree, otherwise return false """
-    # Your code here
-    return False
+    if is_empty_tree(tree):
+        return False
+    elif x == entry(tree):
+        return True
+    elif x < entry(tree):
+        return contains(x, left_branch(tree))
+    elif x > entry(tree):
+        return contains(x, right_branch(tree))
 
 print(contains(1, t1))
 #=> True
@@ -177,9 +185,15 @@ print(contains(11, t2))
 
 def flatten(tree):
     """ flattens tree with the following rule:
-        visit left branch, visit entry then visit right branch """
-    # Your code here
-    return []
+        visit left branch, visit entry then visit right branch :w
+        """
+    if is_empty_tree(tree):
+        return []
+    elif is_empty_tree(left_branch(tree)) and is_empty_tree(right_branch(tree)):
+        return [entry(tree)]
+    else:
+        return flatten(left_branch(tree)) + [entry(tree)] + flatten(right_branch(tree))
+
 
 print(flatten(t1))
 #=> [1, 2, 3, 5]
@@ -193,8 +207,11 @@ print(flatten(t2))
 ##########
 
 def sort_it(lst):
-    # Your code here
-    return []
+    tree = make_empty_tree()
+    for i in lst:
+        tree = insert_tree(i, tree)
+    return flatten(tree)
+    
 
 print(sort_it([5, 3, 2, 1, 4, 6, 7, 9]))
 #=> [1, 2, 3, 4, 5, 6, 7, 9]
@@ -208,18 +225,23 @@ print(sort_it([5, 3, 2, 1, 4, -1, 6, 0, 7, 9]))
 ###########
 
 def copy_it(tree):
-    # Your code here
-    return []
+    if is_empty_tree(tree):
+        result = make_empty_tree()
+        return result
+    elif is_empty_tree(left_branch(tree)) and is_empty_tree(right_branch(tree)):
+        return insert_tree(entry(tree), make_empty_tree()) 
+    else:
+        return build_tree(entry(tree), copy_it(left_branch(tree)), copy_it(right_branch(tree)))
 
 t3 = copy_it(t1)
 t4 = copy_it(t2)
 
-# print_tree(t3)
+print_tree(t3)
 #=>   2
 #   1   3
 #         5
 
-# print_tree(t4)
+print_tree(t4)
 #=>    5
 #    2   7
 #   1 3 6 10
