@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "4fc6eea5336abca0",
+        "id": "b825eccbae5373b1",
         "type": "tabs",
         "children": [
           {
-            "id": "fc3e5c61f29c7c68",
+            "id": "5f1073020197a506",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Assignment.md",
+                "file": "Collections.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,7 +31,7 @@
       {
         "id": "3e1b04ab02b8df1b",
         "type": "tabs",
-        "dimension": 39.4291754756871,
+        "dimension": 32.27513227513227,
         "children": [
           {
             "id": "5dbb978dd2c42f03",
@@ -70,7 +70,7 @@
       {
         "id": "45fbc72885262b86",
         "type": "tabs",
-        "dimension": 60.57082452431289,
+        "dimension": 67.72486772486772,
         "children": [
           {
             "id": "fa4bc680be13d8d4",
@@ -86,7 +86,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 232.5,
+    "collapsed": true
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -102,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Assignment.md",
+                "file": "Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Assignment.md",
+                "file": "Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Assignment.md"
+                "file": "Collections.md"
               }
             }
           },
@@ -183,10 +184,21 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "fc3e5c61f29c7c68",
+  "active": "5f1073020197a506",
   "lastOpenFiles": [
-    "Lists.md",
+    "Lecture Slides/CS1010S-Lec-08+Multiple+Representation.pdf",
+    "Collections.md",
+    "Constructors.md",
+    "Prime Numbers.md",
+    "Multiple Representations.md",
+    "Multiset.md",
+    "Matrices.md",
+    "Unordered Representations.md",
+    "Dictionary.md",
     "Assignment.md",
+    "Sequences.md",
+    "Set.md",
+    "Lists.md",
     "Mutation.md",
     "Lecture Slides/CS1010S-Lec-07+Sequence+and+Mutability.pdf",
     "Modifications.md",
@@ -199,21 +211,10 @@
     "Scaling a Sequence.md",
     "Recursive Process.md",
     "Printers.md",
-    "Prime Numbers.md",
     "HOF Fold.md",
     "HOF Accumulate.md",
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
-    "Sum odd squares.md",
-    "Tables.md",
-    "Tracing.md",
-    "Tuples.md",
-    "Sequences.md",
-    "Selector.md",
-    "Lambda Functions.md",
-    "Iterables.md",
-    "Order of Growth.md",
-    "Box-and-Pointer Notation.md",
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
