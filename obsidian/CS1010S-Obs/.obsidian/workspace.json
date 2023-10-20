@@ -4,15 +4,24 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "45b019b8bbbbebb7",
         "type": "tabs",
         "children": [
           {
             "id": "8631a544cc308bca",
+=======
+        "id": "b825eccbae5373b1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f1073020197a506",
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
                 "mode": "preview",
                 "source": false
@@ -60,6 +69,13 @@
                 }
               }
             ]
+=======
+                "file": "Collections.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
           }
         ],
         "direction": "horizontal"
@@ -74,7 +90,7 @@
       {
         "id": "3e1b04ab02b8df1b",
         "type": "tabs",
-        "dimension": 39.4291754756871,
+        "dimension": 32.27513227513227,
         "children": [
           {
             "id": "5dbb978dd2c42f03",
@@ -113,7 +129,7 @@
       {
         "id": "45fbc72885262b86",
         "type": "tabs",
-        "dimension": 60.57082452431289,
+        "dimension": 67.72486772486772,
         "children": [
           {
             "id": "fa4bc680be13d8d4",
@@ -129,7 +145,12 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 269.5
+=======
+    "width": 232.5,
+    "collapsed": true
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -145,7 +166,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
+=======
+                "file": "Collections.md",
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +187,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
+=======
+                "file": "Collections.md",
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +214,11 @@
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Sequences.md"
+=======
+                "file": "Collections.md"
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
               }
             }
           },
@@ -198,8 +231,17 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "42745f0f21d15c46",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -217,23 +259,54 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
+<<<<<<< HEAD
   "active": "8631a544cc308bca",
   "lastOpenFiles": [
+=======
+  "active": "5f1073020197a506",
+  "lastOpenFiles": [
+    "Lecture Slides/CS1010S-Lec-08+Multiple+Representation.pdf",
+    "Collections.md",
+    "Constructors.md",
+    "Prime Numbers.md",
+    "Multiple Representations.md",
+    "Multiset.md",
+    "Matrices.md",
+    "Unordered Representations.md",
+    "Dictionary.md",
+    "Assignment.md",
+    "Sequences.md",
+    "Set.md",
+    "Lists.md",
+    "Mutation.md",
+    "Lecture Slides/CS1010S-Lec-07+Sequence+and+Mutability.pdf",
+    "Modifications.md",
+    "Untitled.md",
+    "Higher Order Function.md",
+    "HOF Sequences.md",
+    "Rational Number.md",
+    "Big-O Notation.md",
+    "Reversing.md",
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
     "Scaling a Sequence.md",
     "HOF Sequences.md",
     "Function.md",
     "Data Abstraction.md",
     "Printers.md",
+<<<<<<< HEAD
     "Predicates.md",
     "Rational Number.md",
     "Big-O Notation.md",
     "Reversing.md",
     "Recursive Process.md",
     "Prime Numbers.md",
+=======
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
     "HOF Fold.md",
     "HOF Accumulate.md",
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
+<<<<<<< HEAD
     "Higher Order Function.md",
     "Sum odd squares.md",
     "Tables.md",
@@ -247,6 +320,8 @@
     "Box-and-Pointer Notation.md",
     "Functional Abstraction.md",
     "Evaluation.md",
+=======
+>>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
