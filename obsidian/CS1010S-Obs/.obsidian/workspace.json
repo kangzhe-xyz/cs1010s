@@ -4,21 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "eab8933391ca8bf8",
+        "id": "45b019b8bbbbebb7",
         "type": "tabs",
         "children": [
-          {
-            "id": "82c09805aaa2428e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Higher Order Function.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
           {
             "id": "8631a544cc308bca",
             "type": "leaf",
@@ -26,39 +14,55 @@
               "type": "markdown",
               "state": {
                 "file": "HOF Sequences.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a6ac9b10aa1ad4b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rational Number.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
-        "id": "4fc6eea5336abca0",
-        "type": "tabs",
+        "id": "e09f2ea8904dda99",
+        "type": "split",
         "children": [
           {
-            "id": "464643a5bef0fe4d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
+            "id": "eab8933391ca8bf8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "c197a7cf6eed7f7d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Scaling a Sequence.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "68fc9b6d935074b8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "82c09805aaa2428e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Higher Order Function.md",
+                    "mode": "preview",
+                    "source": false
+                  }
+                }
+              }
+            ]
           }
-        ]
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -103,7 +107,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "45fbc72885262b86",
@@ -124,7 +129,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 232.5
+    "width": 269.5
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -140,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rational Number.md",
+                "file": "HOF Sequences.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rational Number.md",
+                "file": "HOF Sequences.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rational Number.md"
+                "file": "HOF Sequences.md"
               }
             }
           },
@@ -212,14 +217,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a6ac9b10aa1ad4b2",
+  "active": "8631a544cc308bca",
   "lastOpenFiles": [
-    "Big-O Notation.md",
-    "HOF Sequences.md",
-    "Reversing.md",
     "Scaling a Sequence.md",
-    "Recursive Process.md",
+    "HOF Sequences.md",
+    "Function.md",
+    "Data Abstraction.md",
     "Printers.md",
+    "Predicates.md",
+    "Rational Number.md",
+    "Big-O Notation.md",
+    "Reversing.md",
+    "Recursive Process.md",
     "Prime Numbers.md",
     "HOF Fold.md",
     "HOF Accumulate.md",
@@ -238,10 +247,6 @@
     "Box-and-Pointer Notation.md",
     "Functional Abstraction.md",
     "Evaluation.md",
-    "Factorial.md",
-    "Fibonacci.md",
-    "Files.md",
-    "Data Wrangling.md",
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
