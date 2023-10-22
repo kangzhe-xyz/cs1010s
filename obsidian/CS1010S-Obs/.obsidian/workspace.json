@@ -22,7 +22,11 @@
               "type": "markdown",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
+=======
+                "file": "Matrices.md",
+>>>>>>> d271c8f (mission 7)
                 "mode": "preview",
                 "source": false
               }
@@ -146,11 +150,15 @@
     ],
     "direction": "horizontal",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "width": 269.5
 =======
     "width": 232.5,
     "collapsed": true
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
+=======
+    "width": 232.5
+>>>>>>> d271c8f (mission 7)
   },
   "right": {
     "id": "24ea14efcc891d10",
@@ -167,10 +175,14 @@
               "type": "backlink",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
 =======
                 "file": "Collections.md",
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
+=======
+                "file": "Matrices.md",
+>>>>>>> d271c8f (mission 7)
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -188,10 +200,14 @@
               "type": "outgoing-link",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "file": "HOF Sequences.md",
 =======
                 "file": "Collections.md",
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
+=======
+                "file": "Matrices.md",
+>>>>>>> d271c8f (mission 7)
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -215,10 +231,14 @@
               "type": "outline",
               "state": {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 "file": "HOF Sequences.md"
 =======
                 "file": "Collections.md"
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
+=======
+                "file": "Matrices.md"
+>>>>>>> d271c8f (mission 7)
               }
             }
           },
@@ -265,20 +285,24 @@
 =======
   "active": "5f1073020197a506",
   "lastOpenFiles": [
-    "Lecture Slides/CS1010S-Lec-08+Multiple+Representation.pdf",
-    "Collections.md",
-    "Constructors.md",
-    "Prime Numbers.md",
     "Multiple Representations.md",
-    "Multiset.md",
-    "Matrices.md",
+    "Set.md",
     "Unordered Representations.md",
+    "Lists.md",
+    "Matrices.md",
+    "Iterative Process.md",
+    "Mutation.md",
+    "Order of Growth.md",
+    "Multiset.md",
+    "Predicates.md",
+    "Prime Numbers.md",
+    "Printers.md",
     "Dictionary.md",
+    "Collections.md",
+    "Lecture Slides/CS1010S-Lec-08+Multiple+Representation.pdf",
+    "Constructors.md",
     "Assignment.md",
     "Sequences.md",
-    "Set.md",
-    "Lists.md",
-    "Mutation.md",
     "Lecture Slides/CS1010S-Lec-07+Sequence+and+Mutability.pdf",
     "Modifications.md",
     "Untitled.md",
@@ -289,6 +313,7 @@
     "Reversing.md",
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
     "Scaling a Sequence.md",
+<<<<<<< HEAD
     "HOF Sequences.md",
     "Function.md",
     "Data Abstraction.md",
@@ -304,6 +329,9 @@
 >>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
     "HOF Fold.md",
     "HOF Accumulate.md",
+=======
+    "Recursive Process.md",
+>>>>>>> d271c8f (mission 7)
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
 <<<<<<< HEAD

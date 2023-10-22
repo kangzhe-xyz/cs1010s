@@ -3,5 +3,6 @@
   "cssTheme": "Atom",
   "monospaceFontFamily": "Fira Code,FantasqueSansM Nerd Font Mono,FantasqueSansM Nerd Font",
   "theme": "obsidian",
-  "translucency": false
+  "translucency": false,
+  "baseFontSize": 15
 }
