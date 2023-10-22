@@ -1,103 +1,49 @@
 {
   "main": {
-    "id": "fa5175f656eb9a51",
+    "id": "f24acdfee1defbcf",
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "45b019b8bbbbebb7",
+        "id": "3d254ebc1d911370",
         "type": "tabs",
         "children": [
           {
-            "id": "8631a544cc308bca",
-=======
-        "id": "b825eccbae5373b1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5f1073020197a506",
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
+            "id": "92098eab0a58c5fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "file": "HOF Sequences.md",
-=======
-                "file": "Matrices.md",
->>>>>>> d271c8f (mission 7)
+                "file": "Dictionary.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
         ]
-      },
-      {
-        "id": "e09f2ea8904dda99",
-        "type": "split",
-        "children": [
-          {
-            "id": "eab8933391ca8bf8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "c197a7cf6eed7f7d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Scaling a Sequence.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "68fc9b6d935074b8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "82c09805aaa2428e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Higher Order Function.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              }
-            ]
-=======
-                "file": "Collections.md",
-                "mode": "source",
-                "source": false
-              }
-            }
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-          }
-        ],
-        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b653ee10b27dfdf6",
+    "id": "b6d3e381ab0c9254",
     "type": "split",
     "children": [
       {
-        "id": "3e1b04ab02b8df1b",
+        "id": "836e1697fa7efd08",
         "type": "tabs",
-        "dimension": 32.27513227513227,
         "children": [
           {
-            "id": "5dbb978dd2c42f03",
+            "id": "7e8f5a93af838a01",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c90d22e6696c02c5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -112,77 +58,34 @@
             }
           },
           {
-            "id": "6b86e9b2654d3479",
+            "id": "c4aaeb44a3a677e7",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
-            }
-          },
-          {
-            "id": "ae12dd86b035e036",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "45fbc72885262b86",
-        "type": "tabs",
-        "dimension": 67.72486772486772,
-        "children": [
-          {
-            "id": "fa4bc680be13d8d4",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "width": 269.5
-=======
-    "width": 232.5,
-    "collapsed": true
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-=======
-    "width": 232.5
->>>>>>> d271c8f (mission 7)
+    "width": 300
   },
   "right": {
-    "id": "24ea14efcc891d10",
+    "id": "920e2f52d3840a2d",
     "type": "split",
     "children": [
       {
-        "id": "14a31961ef36a496",
+        "id": "deb81ed438d70a25",
         "type": "tabs",
         "children": [
           {
-            "id": "2502ba38f0b6c04c",
+            "id": "3e3511f66d60857a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "file": "HOF Sequences.md",
-=======
-                "file": "Collections.md",
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-=======
-                "file": "Matrices.md",
->>>>>>> d271c8f (mission 7)
+                "file": "Dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -194,27 +97,19 @@
             }
           },
           {
-            "id": "f4054eac09206ce4",
+            "id": "d1fb8f89e5161200",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "file": "HOF Sequences.md",
-=======
-                "file": "Collections.md",
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-=======
-                "file": "Matrices.md",
->>>>>>> d271c8f (mission 7)
+                "file": "Dictionary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "8fe447e118fddd5a",
+            "id": "24cc6ecf07e33565",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -225,25 +120,7 @@
             }
           },
           {
-            "id": "fd0c834826dc1844",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                "file": "HOF Sequences.md"
-=======
-                "file": "Collections.md"
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-=======
-                "file": "Matrices.md"
->>>>>>> d271c8f (mission 7)
-              }
-            }
-          },
-          {
-            "id": "12ab729e2a0fb329",
+            "id": "a74e5e6377d6f683",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -253,15 +130,16 @@
             }
           },
           {
-            "id": "42745f0f21d15c46",
+            "id": "242fe8bc4d88dac2",
             "type": "leaf",
             "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "Dictionary.md"
+              }
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
@@ -270,90 +148,15 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "graph:Open graph view": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
-<<<<<<< HEAD
-  "active": "8631a544cc308bca",
-  "lastOpenFiles": [
-=======
-  "active": "5f1073020197a506",
-  "lastOpenFiles": [
-    "Multiple Representations.md",
-    "Set.md",
-    "Unordered Representations.md",
-    "Lists.md",
-    "Matrices.md",
-    "Iterative Process.md",
-    "Mutation.md",
-    "Order of Growth.md",
-    "Multiset.md",
-    "Predicates.md",
-    "Prime Numbers.md",
-    "Printers.md",
-    "Dictionary.md",
-    "Collections.md",
-    "Lecture Slides/CS1010S-Lec-08+Multiple+Representation.pdf",
-    "Constructors.md",
-    "Assignment.md",
-    "Sequences.md",
-    "Lecture Slides/CS1010S-Lec-07+Sequence+and+Mutability.pdf",
-    "Modifications.md",
-    "Untitled.md",
-    "Higher Order Function.md",
-    "HOF Sequences.md",
-    "Rational Number.md",
-    "Big-O Notation.md",
-    "Reversing.md",
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-    "Scaling a Sequence.md",
-<<<<<<< HEAD
-    "HOF Sequences.md",
-    "Function.md",
-    "Data Abstraction.md",
-    "Printers.md",
-<<<<<<< HEAD
-    "Predicates.md",
-    "Rational Number.md",
-    "Big-O Notation.md",
-    "Reversing.md",
-    "Recursive Process.md",
-    "Prime Numbers.md",
-=======
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-    "HOF Fold.md",
-    "HOF Accumulate.md",
-=======
-    "Recursive Process.md",
->>>>>>> d271c8f (mission 7)
-    "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
-    "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
-<<<<<<< HEAD
-    "Higher Order Function.md",
-    "Sum odd squares.md",
-    "Tables.md",
-    "Tracing.md",
-    "Tuples.md",
-    "Sequences.md",
-    "Selector.md",
-    "Lambda Functions.md",
-    "Iterables.md",
-    "Order of Growth.md",
-    "Box-and-Pointer Notation.md",
-    "Functional Abstraction.md",
-    "Evaluation.md",
-=======
->>>>>>> 84ed49a825bfd76b0951a67a6d35787c1aeeb582
-    "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
-    "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
-    "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
-    "Lecture Slides/CS1010S-Lec-01 Introduction to CS1010S and Python.pdf",
-    "Lecture Slides"
-  ]
+  "active": "92098eab0a58c5fa",
+  "lastOpenFiles": []
 }

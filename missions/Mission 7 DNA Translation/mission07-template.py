@@ -26,7 +26,10 @@ def replicate(dna_strand):
         "G": "C",
         "C": "G"
     }
-    """Your code here"""
+    res = ""
+    for i in dna_strand:
+        res += dna_base_pairings[i]
+    return res[::-1]
 
 print("## Q1 ##")
 print(replicate("AAATGC"))     # 'GCATTT'
@@ -42,7 +45,27 @@ print(replicate(dna)[:10])    #'AATAGTTTCT'
 ##########
 
 def find_transcription_region(dna_strand):
-    """Your code here"""
+    """
+    returns the region to transcribe. detects "TATA" (excl) and "CGCG" (incl) sequence, returns things between.
+    """
+    for i in range(len(dna_strand)):
+        if len(dna_strand) - i < 4: # if less than 4 chars left in the string, not possible for TATA
+            return None
+        elif dna_strand[i:i+4:1] == "TATA": # check i to i+3
+            result = dna_strand[i+4::] # return the remaining
+            break
+    
+    if not "CGCG" in result:
+        return result
+
+    else: 
+        result2 = ""
+        for i in range(len(result)):
+            if not result[i:i+4:1] == "CGCG":
+                result2 += result[i]
+            else:
+                return result2 + "CGCG"
+        return result2
 
 print("## Q2 ##")
 print(find_transcription_region("AGCTTAGCTATATCGTTAATTGCAGAGACGCGA"))
@@ -59,10 +82,28 @@ print(find_transcription_region("AGCGAGCGTAGC"))
 
 def transcribe(dna_strand):
     dna_strand = find_transcription_region(dna_strand)
-    """Your code here"""
+    rna_base_pairings = {
+        "A": "U",
+        "T": "A",
+        "C": "G",
+        "G": "C"
+    }
+    result = ""
+    for i in dna_strand:
+        result += rna_base_pairings[i]
+    return result[::-1]
 
 def reverse_transcribe(rna_strand):
-    """Your code here"""
+    reverse_rna_base_pairings = {
+        "A": "T",
+        "U": "A",
+        "C": "G",
+        "G": "C"
+    }
+    result = ""
+    for i in rna_strand:
+        result += reverse_rna_base_pairings[i]
+    return result[::-1]
 
 print("## Q3 ##")
 print(transcribe("AGCTTAGCTATATCGTTAATTGCAGAGACGCGA"))
@@ -87,18 +128,23 @@ print(reverse_transcribe('CGCGGCAUAG'))
 ##########
 
 def get_mapping(csvfilename):
-    """Your code here"""
+    tpls = read_csv(csvfilename)
+    aa_mappings = {}
+    for i in tpls:
+        aa_mappings[i[0]] = i[-1]
+    return aa_mappings
+
 
 print("## Q4 ##")
 codon2amino = get_mapping("codon_mapping.csv")
 
 # Uncomment to test your function
-# print(codon2amino["ACA"]) # 'T'
-# print(codon2amino["AUU"]) # 'I'
-# print(codon2amino["CUC"]) # 'L'
-# print(codon2amino["ACU"]) # 'T'
-# print(codon2amino["UAG"]) # '_'
-# print(codon2amino["UGA"]) # '_'
+print(codon2amino["ACA"]) # 'T'
+print(codon2amino["AUU"]) # 'I'
+print(codon2amino["CUC"]) # 'L'
+print(codon2amino["ACU"]) # 'T'
+print(codon2amino["UAG"]) # '_'
+print(codon2amino["UGA"]) # '_'
 
 
 ##########
@@ -107,7 +153,21 @@ codon2amino = get_mapping("codon_mapping.csv")
 
 def translate(rna_strand):
     codon2amino = get_mapping("codon_mapping.csv")
-    """Your code here"""
+    if "AUG" not in rna_strand: # no start codon, skip the check altogether
+        return None
+    else:
+        while rna_strand[0:3] != "AUG": # keep deleting the first char until "AUG" is the first 3
+            if rna_strand == "":
+                return None
+            rna_strand = rna_strand[1:]
+        
+        protein = "" # init empty string
+        for i in range(0, len(rna_strand), 3): # sliding window every 3 chars
+            if "_" not in protein:
+                protein += codon2amino[rna_strand[i:i+3:1]] # add the lookup result
+            else: # hits "_", return
+                return protein
+        return protein if protein[-1] == "_" else None # no stop codon, invalid protein
 
 print("## Q5 ##")
 print(translate("AUGUAA"))           # 'M_'
