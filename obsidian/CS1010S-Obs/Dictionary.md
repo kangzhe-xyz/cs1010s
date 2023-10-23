@@ -1,5 +1,7 @@
 A mapping from key to value.
 $$\mathtt{dict} \colon \mathtt{key} \to \mathtt{value}.$$
+# Declaration
+## Explicitly
 ```python
 lecturers = {
 	# key    : value
@@ -10,7 +12,16 @@ lecturers = {
 ```
 
 We call each line a key-value pair.
-Think of it as a lookup table
+Think of it as a lookup table.
+## Another Representation
+```python
+lecturers = {
+			 dcsaysp = 'Adi',
+			 dcsashi = 'Ashish',
+			 dcsdlsw = 'Daren'
+}
+```
+There is no need to cast the first key as a string. Python will read it as a string automatically.
 
 | Key     | Value  |
 | ------- | ------ |
