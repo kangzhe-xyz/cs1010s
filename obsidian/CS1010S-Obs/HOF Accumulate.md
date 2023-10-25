@@ -12,3 +12,20 @@ def accumulate(fn, init, seq):
 	else:
 		return fn(seq[0], accumulate(fn, init, seq[1:]))
 ```
+# Example
+```python
+accumulate(
+		   lambda x, y: x + y,
+		   0,
+		   tup
+)
+```
+Adds all the numbers in `tup` to `0`.
+```python
+accumulate(
+		   lambda x, y: x * y,
+		   1,
+		   tup
+)
+```
+Multiplies all the numbers in `tup` to `2`.
