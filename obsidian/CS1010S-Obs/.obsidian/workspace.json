@@ -25,40 +25,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOF Sequences.md",
+                "file": "HOF Fold.md",
                 "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a6ac9b10aa1ad4b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Rational Number.md",
-                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "4fc6eea5336abca0",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "464643a5bef0fe4d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rational Number.md",
+                "file": "HOF Fold.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Rational Number.md",
+                "file": "HOF Fold.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -180,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Rational Number.md"
+                "file": "HOF Fold.md"
               }
             }
           },
@@ -212,16 +186,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a6ac9b10aa1ad4b2",
+  "active": "8631a544cc308bca",
   "lastOpenFiles": [
-    "Big-O Notation.md",
+    "CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf.md",
+    "HOF Fold.md",
     "HOF Sequences.md",
+    "Rational Number.md",
+    "Big-O Notation.md",
     "Reversing.md",
     "Scaling a Sequence.md",
     "Recursive Process.md",
     "Printers.md",
     "Prime Numbers.md",
-    "HOF Fold.md",
     "HOF Accumulate.md",
     "Lecture Slides/CS1010S-Lec-06+Working+with+Sequence.pdf",
     "Lecture Slides/CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf",
@@ -240,8 +216,6 @@
     "Evaluation.md",
     "Factorial.md",
     "Fibonacci.md",
-    "Files.md",
-    "Data Wrangling.md",
     "Lecture Slides/CS1010S-Lec-05 Data Abstraction.pdf",
     "Lecture Slides/CS1010S-Lec-03 Recursion, Iteration.pdf",
     "Lecture Slides/CS1010S-Lec-02 Functional Abstraction.pdf",
