@@ -1,8 +1,8 @@
 {
   "accentColor": "",
   "cssTheme": "Atom",
-  "monospaceFontFamily": "Fira Code,FantasqueSansM Nerd Font Mono,FantasqueSansM Nerd Font",
+  "monospaceFontFamily": "FantasqueSansM Nerd Font Mono,FantasqueSansM Nerd Font,Fira Code",
   "theme": "obsidian",
   "translucency": false,
-  "baseFontSize": 14
+  "baseFontSize": 19
 }
