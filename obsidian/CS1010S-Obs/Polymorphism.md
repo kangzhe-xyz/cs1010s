@@ -14,6 +14,7 @@ add(2) # => Error!
 ```
 ## Functional Overriding
 If sometimes you have multiple functions but named the same way, depending on how it is defined it might override another definition.
+For example, see this usage of [[Inheritance]]
 ```python
 class A(object):
 	def print(self):

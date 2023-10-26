@@ -1,5 +1,5 @@
 ```python
-class Speaker(object)\:
+class Speaker(object):
 	def say(self, stuff):
 		print(stuff)
 ```

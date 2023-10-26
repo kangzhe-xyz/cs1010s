@@ -41,6 +41,7 @@ print(lst)
 1. [[Space Wars]]
 2. [[Speakers]]
 # `isinstance` vs `type`
+An example using [[Inheritance]]
 ```python
 class A:
 	...

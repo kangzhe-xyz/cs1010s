@@ -13,7 +13,23 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Higher Order Function.md",
+=======
+                "file": "Class.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "76c6bd388aae2871",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Speakers.md",
+>>>>>>> b23f9b2 (obsidian update)
                 "mode": "preview",
                 "source": false
               }
@@ -25,14 +41,62 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Fold.md",
+=======
+                "file": "Space Wars.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4aa67865752e7af6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Class.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c299385a62edd34b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Inheritance.md",
+>>>>>>> b23f9b2 (obsidian update)
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
+<<<<<<< HEAD
         "currentTab": 1
+=======
+        "currentTab": 3
+      },
+      {
+        "id": "40104dc06dafa511",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc75dfc5cea5b731",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Lecture Slides/CS1010S-Lec-09+Object+Oriented+Programming.pdf"
+              }
+            }
+          }
+        ]
+>>>>>>> b23f9b2 (obsidian update)
       }
     ],
     "direction": "vertical"
@@ -99,7 +163,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Fold.md",
+=======
+                "file": "Class.md",
+>>>>>>> b23f9b2 (obsidian update)
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +184,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
                 "file": "HOF Fold.md",
+=======
+                "file": "Class.md",
+>>>>>>> b23f9b2 (obsidian update)
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -159,7 +231,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Polymorphism.md"
+                "file": "Class.md"
               }
             }
           }
@@ -181,10 +253,26 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
+<<<<<<< HEAD
   "active": "8631a544cc308bca",
   "lastOpenFiles": [
     "CS1010S-Lec-04 Order of Growth and Higher-Order Functions.pdf.md",
     "HOF Fold.md",
+=======
+  "active": "4aa67865752e7af6",
+  "lastOpenFiles": [
+    "Inheritance.md",
+    "Speakers.md",
+    "Class.md",
+    "Polymorphism.md",
+    "Lecture Slides/CS1010S-Lec-09+Object+Oriented+Programming.pdf",
+    "Space Wars.md",
+    "Method.md",
+    "Dictionary.md",
+    "Object-Oriented Programming (OOP).md",
+    "Object.md",
+    "Collections.md",
+>>>>>>> b23f9b2 (obsidian update)
     "HOF Sequences.md",
     "Rational Number.md",
     "Big-O Notation.md",
