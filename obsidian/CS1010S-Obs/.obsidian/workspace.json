@@ -54,12 +54,8 @@
             "id": "4aa67865752e7af6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Class.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -80,6 +76,7 @@
         "currentTab": 1
 =======
         "currentTab": 3
+<<<<<<< HEAD
       },
       {
         "id": "40104dc06dafa511",
@@ -97,6 +94,8 @@
           }
         ]
 >>>>>>> b23f9b2 (obsidian update)
+=======
+>>>>>>> 7e83561 (mission 08)
       }
     ],
     "direction": "vertical"
@@ -261,11 +260,11 @@
 =======
   "active": "4aa67865752e7af6",
   "lastOpenFiles": [
+    "Lecture Slides/CS1010S-Lec-09+Object+Oriented+Programming.pdf",
+    "Class.md",
     "Inheritance.md",
     "Speakers.md",
-    "Class.md",
     "Polymorphism.md",
-    "Lecture Slides/CS1010S-Lec-09+Object+Oriented+Programming.pdf",
     "Space Wars.md",
     "Method.md",
     "Dictionary.md",
