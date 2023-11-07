@@ -20,22 +20,22 @@ class Weapon(Thing):
     ###########
 
     def __init__(self, name, min_dmg, max_dmg):
-        # your code here
-        pass
-
+        self.name = name
+        self.min_dmg = min_dmg
+        self.max_dmg = max_dmg
 
     ###########
     # Task 1b #
     ###########
 
     def min_damage(self):
-        # your code here
-        return
+        return self.min_dmg
 
     def max_damage(self):
-        # your code here
-        return
-
+        return self.max_dmg
+    
+    def get_name(self): # for task 2
+        return self.name
 
     ###########
     # Task 1c #
@@ -43,7 +43,7 @@ class Weapon(Thing):
 
     def damage(self):
         # your code here
-        return
+        return random.randint(self.min_damage(), self.max_damage())
 
 
 def test_task1():
@@ -60,7 +60,7 @@ def test_task1():
     print(sword.damage())               # Random value between 3 to 10
 
 # uncomment to test task1
-# test_task1()
+test_task1()
 
 
 ############
@@ -73,27 +73,29 @@ class Ammo(Thing):
     ###########
     # Task 2a #
     ###########
-    # constructor here
-
+    def __init__(self, name, weapon_for, ammo_quantity):
+        self.name = name
+        self.weapon_for = weapon_for.get_name()
+        self.ammo_quantity = ammo_quantity
 
     ###########
     # Task 2b #
     ###########
-    # definition of get_quantity here
+    def get_quantity(self):
+        return self.ammo_quantity
 
 
     ###########
     # Task 2c #
     ###########
-    # definition of weapon_type here
-
+    def weapon_type(self):
+        return self.weapon_for
 
     ###########
     # Task 2d #
     ###########
-    # definition of remove_all here
-
-    pass # remove this
+    def remove_all(self):
+        self.ammo_quantity = 0
 
 def test_task2():
     print('=== Task 2 ===')
@@ -105,7 +107,7 @@ def test_task2():
     print(arrows.get_quantity())        # 0
 
 # uncomment to test task2
-#test_task2()
+test_task2()
 
 
 ############
@@ -113,34 +115,36 @@ def test_task2():
 ############
 
 class RangedWeapon(Weapon):
-
-
     ###########
     # Task 3a #
     ###########
-    # constructor here
-
+    def __init__(self, name, min_dmg, max_dmg):
+        super().__init__(name, min_dmg, max_dmg)
+        self.shots = 0
 
     ###########
     # Task 3b #
     ###########
-    # definition of shots_left here
-
+    def shots_left(self):
+        return self.shots
 
     ###########
     # Task 3c #
     ###########
-    # definition of load here
-
+    def load(self, ammo: Ammo):
+        if ammo.weapon_type() != super().get_name():
+            return None
+        self.shots += ammo.get_quantity()
+        ammo.remove_all()
 
     ###########
     # Task 3d #
     ###########
-    # definition of damage here
-
-    pass # remove this
-
-
+    def damage(self):
+        if self.shots == 0:
+            return 0
+        self.shots -= 1
+        return super().damage()
 
 def test_task3():
     print('=== Task 3a ===')
@@ -170,20 +174,33 @@ def test_task3():
     print(crossbow.shots_left())    # 9
 
 # uncomment to test task3
-#test_task3()
+test_task3()
 
 
 ###########
 # Task 4a #
 ###########
-# definition of Food class here
-
-
+class Food(Thing):
+    def __init__(self, name, food_value):
+        self.name = name
+        self.food_value = food_value
+        
+    def get_food_value(self):
+        return self.food_value
+    
 ###########
 # Task 4b #
 ###########
-# definition of Medicine class here
-
+class Medicine(Food):
+    def __init__(self, name, food_value, medicine_value):
+        super().__init__(name, food_value)
+        self.medicine_value = medicine_value
+        
+    def get_food_value(self):
+        return super().get_food_value()
+    
+    def get_medicine_value(self):
+        return self.medicine_value
 
 def test_task4():
     print('=== Task 4 ===')
@@ -194,14 +211,33 @@ def test_task4():
     print(panadol.get_medicine_value())         # 5
 
 # uncomment to test task4
-# test_task4()
+test_task4()
 
 
 ##############
 # Task 5a&b  #
 ##############
-# definition of Animal class here
-
+class Animal(LivingThing):
+    def __init__(self, *args):
+        self.name = args[0]
+        self.health = args[1]
+        self.food_value = args[2]
+        try:
+            self.threshold = args[3]
+        except:
+            self.threshold = random.randint(0,4)
+    
+    def get_food_value(self):
+        return self.food_value
+    
+    def get_threshold(self):
+        return self.threshold
+    
+    def go_to_heaven(self):
+        the_meat = Food(f"{self.get_name()} meat", self.get_food_value)
+        self.get_place().add_object(the_meat)
+        super().go_to_heaven()
+        
 def test_task5():
     print('=== Task 5a ===')
     bear = Animal('bear', 20, 10, 3)
@@ -214,12 +250,13 @@ def test_task5():
     print('=== Task 5b ===')
     BASE.add_object(bear)
     print(named_col(BASE.get_objects()))    # ['bear']
+
     print(bear.get_place().get_name())      # Base
     bear.go_to_heaven()                     # bear went to heaven!
     print(named_col(BASE.get_objects()))    # ['bear meat']
 
 # uncomment to test task5
-# test_task5()
+test_task5()
 
 
 #############
@@ -228,38 +265,49 @@ def test_task5():
 
 class Tribute(Person):
 
-
     ############
     #  Task 6a #
     ############
     def __init__(self, name, health):
         # Tributes will not move by themselves, so set threshold to -1
         super().__init__(name, health, -1)
-        # add hunger property
-
+        self.hunger = 0 
 
     ############
     #  Task 6b #
     ############
-    # definition of get_hunger here
-
-
+    def get_hunger(self):
+        return self.hunger
+   
     ############
     #  Task 6c #
     ############
-    # definition of add_hunger here
-
+    def add_hunger(self, hunger):
+        self.hunger += hunger 
+        if self.hunger >= 100:
+            self.go_to_heaven()
 
     ############
     #  Task 6d #
     ############
-    # definition of reduce_hunger here
+    def reduce_hunger(self, hunger):
+        self.hunger -= hunger
+        self.hunger = max(0, self.hunger)
 
 
 #############
 ##  Task 7 ##
 #############
-# definition of eat here
+    def eat(self, food: Food):
+        try:
+            self.add_health(food.get_medicine_value())
+            self.health = min(100, self.health)
+        except:
+            pass
+        finally:
+            self.reduce_hunger(food.get_food_value())
+            self.hunger = min(self.hunger, 100)
+    
 
 
 ############
@@ -324,7 +372,7 @@ def test_task6():
     print(cc.get_hunger())          # 0
 
 # Uncomment to test task 1
-#test_task6()
+test_task6()
 
 def test_task7():
     print("===== Task 7 ======")
@@ -360,7 +408,7 @@ def test_task7():
     print(named_col(Base.get_objects()))    # ['Chee Chin']
 
 # Uncomment to test task 2
-#test_task7()
+test_task7()
 
 def test_task8():
     print("===== Task 8 ======")
