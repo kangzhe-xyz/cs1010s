@@ -299,16 +299,11 @@ class Tribute(Person):
 ##  Task 7 ##
 #############
     def eat(self, food: Food):
-        try:
+        if food not in self.get_inventory(): # if food not inside, return early
+            return None
+        self.reduce_hunger(food.get_food_value())
+        if isinstance(food, Medicine):
             self.add_health(food.get_medicine_value())
-            self.health = min(100, self.health)
-        except:
-            pass
-        finally:
-            self.reduce_hunger(food.get_food_value())
-            self.hunger = min(self.hunger, 100)
-    
-
 
 ############
 #  Task 8a #
