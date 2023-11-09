@@ -6,6 +6,7 @@
 # Note that written answers should be commented out to allow us to run your
 # code easily while grading your problem set.
 
+from numpy import isin
 from hungry_games import *
 import random
 
@@ -18,9 +19,8 @@ class Weapon(Thing):
     ###########
     # Task 1a #
     ###########
-
     def __init__(self, name, min_dmg, max_dmg):
-        self.name = name
+        super().__init__(name)
         self.min_dmg = min_dmg
         self.max_dmg = max_dmg
 
@@ -74,7 +74,7 @@ class Ammo(Thing):
     # Task 2a #
     ###########
     def __init__(self, name, weapon_for, ammo_quantity):
-        self.name = name
+        super().__init__(name)
         self.weapon_for = weapon_for.get_name()
         self.ammo_quantity = ammo_quantity
 
@@ -131,7 +131,7 @@ class RangedWeapon(Weapon):
     ###########
     # Task 3c #
     ###########
-    def load(self, ammo: Ammo):
+    def load(self, ammo):
         if ammo.weapon_type() != super().get_name():
             return None
         self.shots += ammo.get_quantity()
@@ -182,7 +182,7 @@ test_task3()
 ###########
 class Food(Thing):
     def __init__(self, name, food_value):
-        self.name = name
+        super().__init__(name)
         self.food_value = food_value
         
     def get_food_value(self):
@@ -218,14 +218,14 @@ test_task4()
 # Task 5a&b  #
 ##############
 class Animal(LivingThing):
-    def __init__(self, *args):
-        self.name = args[0]
-        self.health = args[1]
-        self.food_value = args[2]
+    def __init__(self, *args): # multiple arguments
         try:
-            self.threshold = args[3]
-        except:
-            self.threshold = random.randint(0,4)
+            th = args[3] # if there, then use it to set threshold. otherwise it will throw IndexError
+        except IndexError:
+            th = random.randint(0,4)
+        finally:
+            super().__init__(args[0], args[1], th)
+            self.food_value = args[2]
     
     def get_food_value(self):
         return self.food_value
@@ -234,7 +234,7 @@ class Animal(LivingThing):
         return self.threshold
     
     def go_to_heaven(self):
-        the_meat = Food(f"{self.get_name()} meat", self.get_food_value)
+        the_meat = Food(f"{self.get_name()} meat", self.get_food_value()) # create meat object
         self.get_place().add_object(the_meat)
         super().go_to_heaven()
         
@@ -298,35 +298,54 @@ class Tribute(Person):
 #############
 ##  Task 7 ##
 #############
-    def eat(self, food: Food):
-        if food not in self.get_inventory(): # if food not inside, return early
+    def eat(self, food):
+        if food not in self.get_inventory(): # if food not inside, return early, do nothing
             return None
-        self.reduce_hunger(food.get_food_value())
+        self.remove_item(food) # remove item
+        self.reduce_hunger(food.get_food_value()) # check for min hunger 0 already covered in original declaration
         if isinstance(food, Medicine):
-            self.add_health(food.get_medicine_value())
+            self.add_health(food.get_medicine_value()) # check for max health 100 already covered in the original declaration
 
 ############
 #  Task 8a #
 ############
-# definition of get_weapons here
 
+    def funny_filter(self, theClass):
+        result = ()
+        for i in self.get_inventory():
+            if isinstance(i, theClass):
+                result += (i,)
+        return result
+        
+    def get_weapons(self):
+        return self.funny_filter(Weapon)
 
 ############
 #  Task 8b #
 ############
-# definition of get_food here
-
+    def get_food(self):
+        return self.funny_filter(Food)
 
 ############
 #  Task 8c #
 ############
-# definition of get_medicine here
-
+    def get_medicine(self):
+        return self.funny_filter(Medicine)
 
 #############
 ##  Task 9 ##
 #############
-# definition of attack here
+    def attack(self, living_thing, weapon):
+        if living_thing.get_place() != self.get_place(): # not same location, return early
+            return None
+        
+        if weapon not in self.get_weapons(): # no weapon in inventory, return early
+            return None
+        
+        # the actual attacking
+        living_thing.reduce_health(weapon.damage()) # go to heaven accounted for in original declaration of reduce_health, so it will go to heaven
+        
+        
 
 
 #############
@@ -431,7 +450,7 @@ def test_task8():
     print(named_col(cc.get_medicine()))    # ('aloe vera',)
 
 # Uncomment to test task 3
-#test_task8()
+test_task8()
 
 def test_task9():
     print("===== Task 9 ======")
@@ -457,4 +476,6 @@ def test_task9():
     print(named_col(Base.get_objects()))    # ['Chee Chin', 'bear meat']
 
 # Uncomment to test task 4
-#test_task9()
+test_task9()
+
+print(f"Finally, {isinstance(Tribute('Yichen', 100), Person)}")
